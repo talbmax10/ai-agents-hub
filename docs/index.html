@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AI Agents Hub — discover AI agents, tools, skills and MCP servers.">
+  <title>AI Agents Hub</title>
+  <style>
+    :root{--bg:#070b14;--card:#0e1524;--text:#f4f7fb;--muted:#9aa8bc;--accent:#6ee7ff;--accent2:#a78bfa;--border:#1e2a40}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,#16264a 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+    .wrap{max-width:1120px;margin:auto;padding:32px 20px 70px}.nav{display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{font-weight:800;letter-spacing:.3px}.toggle{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:999px;padding:9px 15px;cursor:pointer}
+    .hero{padding:90px 0 55px;max-width:850px}.eyebrow{color:var(--accent);font-weight:700}.hero h1{font-size:clamp(42px,8vw,76px);line-height:1.02;margin:12px 0}.hero p{font-size:20px;color:var(--muted)}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:11px 17px;border-radius:12px;text-decoration:none;color:#071018;background:var(--accent);font-weight:800}.btn.alt{background:transparent;color:var(--text);border:1px solid var(--border)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}.card{background:rgba(14,21,36,.82);border:1px solid var(--border);border-radius:18px;padding:22px}.card h3{margin-top:0}.muted{color:var(--muted)}.rank{display:flex;align-items:center;gap:12px}.num{font-size:28px;font-weight:900;color:var(--accent2)}footer{margin-top:55px;color:var(--muted);border-top:1px solid var(--border);padding-top:25px}
+    [dir=rtl]{text-align:right} [dir=rtl] .nav{flex-direction:row-reverse}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav"><div class="brand">🤖 AI Agents Hub</div><button class="toggle" id="lang" type="button">العربية 🇸🇦</button></nav>
+  <main id="en">
+    <section class="hero"><div class="eyebrow">FOR PEOPLE WHO LOVE AI AGENTS</div><h1>Discover. Compare. Build.</h1><p>A curated home for AI agents, tools, skills, MCP servers and practical installation knowledge.</p><div class="buttons"><a class="btn" href="https://github.com/talbmax10/ai-agents-hub">View on GitHub</a><a class="btn alt" href="../agents/README.md">Explore agents</a></div></section>
+    <section><h2>Featured agents</h2><div class="grid">
+      <article class="card"><div class="rank"><span class="num">01</span><h3>Hermes Agent</h3></div><p class="muted">Persistent personal, coding and autonomous workflows.</p><a href="https://github.com/NousResearch/hermes-agent">Original repository →</a></article>
+      <article class="card"><div class="rank"><span class="num">02</span><h3>OpenHands</h3></div><p class="muted">Open-source software engineering agent platform.</p><a href="https://github.com/All-Hands-AI/OpenHands">Original repository →</a></article>
+      <article class="card"><div class="rank"><span class="num">03</span><h3>OpenCode</h3></div><p class="muted">Terminal-first, provider-agnostic coding agent.</p><a href="https://github.com/anomalyco/opencode">Original repository →</a></article>
+      <article class="card"><div class="rank"><span class="num">04</span><h3>Cline</h3></div><p class="muted">Human-in-the-loop coding inside VS Code.</p><a href="https://github.com/cline/cline">Original repository →</a></article>
+    </div></section>
+    <section style="margin-top:35px"><h2>🧰 Marketplace</h2><div class="grid"><div class="card"><h3>🌐 Browser</h3><p class="muted">Playwright and browser automation.</p></div><div class="card"><h3>🔌 MCP</h3><p class="muted">Connect agents to tools and data.</p></div><div class="card"><h3>💻 Coding</h3><p class="muted">Git, terminals, tests and CI.</p></div><div class="card"><h3>🧠 Memory</h3><p class="muted">Persistent context and retrieval.</p></div></div></section>
+  </main>
+  <main id="ar" dir="rtl" hidden>
+    <section class="hero"><div class="eyebrow">لِمَن يحبون وكلاء الذكاء الاصطناعي</div><h1>اكتشف. قارن. ابنِ.</h1><p>مركز منظم لوكلاء الذكاء الاصطناعي والأدوات والمهارات وMCP وأدلة التنصيب العملية.</p><div class="buttons"><a class="btn" href="https://github.com/talbmax10/ai-agents-hub">المستودع على GitHub</a><a class="btn alt" href="../agents/README.md">استكشف الوكلاء</a></div></section>
+    <section><h2>وكلاء مميزون</h2><div class="grid"><article class="card"><div class="rank"><span class="num">01</span><h3>Hermes Agent</h3></div><p class="muted">سير عمل شخصي وبرمجي ومستقل ومستمر.</p><a href="https://github.com/NousResearch/hermes-agent">المستودع الأصلي ←</a></article><article class="card"><div class="rank"><span class="num">02</span><h3>OpenHands</h3></div><p class="muted">منصة مفتوحة المصدر لهندسة البرمجيات.</p><a href="https://github.com/All-Hands-AI/OpenHands">المستودع الأصلي ←</a></article><article class="card"><div class="rank"><span class="num">03</span><h3>OpenCode</h3></div><p class="muted">وكيل برمجة من الطرفية ومرن مع مزودي النماذج.</p><a href="https://github.com/anomalyco/opencode">المستودع الأصلي ←</a></article><article class="card"><div class="rank"><span class="num">04</span><h3>Cline</h3></div><p class="muted">برمجة تفاعلية داخل VS Code.</p><a href="https://github.com/cline/cline">المستودع الأصلي ←</a></article></div></section>
+    <section style="margin-top:35px"><h2>🧰 متجر الأدوات والمهارات</h2><div class="grid"><div class="card"><h3>🌐 المتصفح</h3><p class="muted">Playwright وأتمتة المتصفح.</p></div><div class="card"><h3>🔌 MCP</h3><p class="muted">ربط الوكلاء بالأدوات والبيانات.</p></div><div class="card"><h3>💻 البرمجة</h3><p class="muted">Git والطرفية والاختبارات وCI.</p></div><div class="card"><h3>🧠 الذاكرة</h3><p class="muted">السياق المستمر والاسترجاع.</p></div></div></section>
+  </main>
+  <footer>AI Agents Hub · Built for the agent community · MIT · <a href="../README.md">Documentation</a></footer>
+</div>
+<script>
+const btn=document.getElementById('lang'),en=document.getElementById('en'),ar=document.getElementById('ar');
+btn.onclick=()=>{const arabic=!ar.hidden;en.hidden=arabic;ar.hidden=!arabic;document.documentElement.lang=arabic?'en':'ar';btn.textContent=arabic?'العربية 🇸🇦':'English 🇬🇧';localStorage.lang=arabic?'en':'ar'};
+if(localStorage.lang==='ar'){en.hidden=true;ar.hidden=false;document.documentElement.lang='ar';btn.textContent='English 🇬🇧'}
+</script>
+</body></html>
