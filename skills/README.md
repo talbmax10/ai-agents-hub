@@ -1,51 +1,45 @@
 # 🧰 Tools & Skills Marketplace
 
-A curated, agent-oriented catalog of capabilities. This directory is intentionally provider-neutral: compatibility must be verified against the upstream documentation.
+A curated, agent-oriented catalog of capabilities. Compatibility must be verified against upstream documentation.
 
 ## Categories
 
-| Category | Examples | Typical agents |
-|---|---|---|
-| 🌐 Browser & Web | Playwright, browser automation | OpenHands, Cline, Hermes, Goose |
-| 🔌 MCP | MCP servers and connectors | Goose, Cline, OpenCode, Claude-compatible agents |
-| 💻 Coding | Git, GitHub, terminals, test runners | Almost all coding agents |
-| 🧠 Memory | Persistent memory, vector stores, retrieval | Hermes and extensible agents |
-| 🔍 Research | Search, extraction, document processing | General/research agents |
-| 📁 Files | File management and document tools | Coding and personal agents |
-| 🖥️ Computer Use | Desktop/GUI interaction | Computer-use capable agents |
-| 📡 Messaging | Telegram, Discord, webhooks | Personal agents and gateways |
-| ⚙️ Automation | Cron, schedules, webhooks | Personal/automation agents |
+- 🌐 Browser & Web — Playwright, Puppeteer, browser-use, Selenium, curl
+- 💻 Coding — Git, GitHub CLI, ripgrep, fd, jq, Docker, pytest
+- 🔌 MCP — protocol and servers for tools/data integrations
+- 🧠 Memory & Data — SQLite, PostgreSQL, Qdrant, Chroma, Redis
+- 🔍 Research & Retrieval — Trafilatura, Scrapy, Beautiful Soup, LlamaIndex, LangChain
+- 📡 Messaging — Telegram and Discord integrations
+- ⚙️ Automation — cron and n8n
+- 🖥️ Computer Use — PyAutoGUI and xdotool
 
 ## Featured tools
 
-### Playwright
-**Type:** Browser automation  
-**Source:** https://github.com/microsoft/playwright  
-**Use:** Reliable browser control, testing and web automation.
+| Tool / skill | Category | Use | Source |
+|---|---|---|---|
+| Playwright | Browser | Browser automation/testing | https://github.com/microsoft/playwright |
+| browser-use | Browser/agent skill | Website operation | https://github.com/browser-use/browser-use |
+| GitHub CLI | Coding | GitHub repositories, issues, PRs and Actions | https://github.com/cli/cli |
+| ripgrep | Search | Fast code/text search | https://github.com/BurntSushi/ripgrep |
+| Docker | Runtime | Isolated execution | https://github.com/docker |
+| LlamaIndex | RAG | Retrieval and data connectors | https://github.com/run-llama/llama_index |
+| Qdrant | Memory | Vector search/RAG | https://github.com/qdrant/qdrant |
+| n8n | Automation | Workflows and webhooks | https://github.com/n8n-io/n8n |
 
-### Model Context Protocol (MCP)
-**Type:** Tool/integration protocol  
-**Source:** https://github.com/modelcontextprotocol  
-**Use:** Connect agents to external tools and data through a standardized protocol.
+## Full catalogs
 
-### GitHub CLI
-**Type:** Developer tool  
-**Source:** https://github.com/cli/cli  
-**Use:** GitHub repositories, issues, pull requests and Actions from the terminal.
-
-### ripgrep
-**Type:** Search tool  
-**Source:** https://github.com/BurntSushi/ripgrep  
-**Use:** Fast local code and text search for coding agents.
+- 📚 [Expanded Tools & Skills catalog](catalog.md)
+- 🔌 [MCP servers and integrations](mcp.md)
+- 🆓 [Free / free-tier model API providers](../providers/free-api.md)
 
 ## Compatibility labels
 
-- ✅ **Native:** documented first-class support.
-- 🔌 **MCP:** available through an MCP server.
-- 🧩 **Plugin:** available through the agent's plugin/extension system.
-- 🛠️ **Manual:** usable through shell/API integration.
-- ❓ **Unverified:** compatibility has not yet been independently checked.
+- ✅ Native — documented first-class support.
+- 🔌 MCP — available through an MCP server.
+- 🧩 Plugin — available through the agent's plugin/extension system.
+- 🛠️ Manual — usable through shell/API integration.
+- ❓ Unverified — not independently checked.
 
-## Submission rules
+## Security
 
-A marketplace entry must link to the original project, include its license, installation method, supported agents (if known), and a short security note when it requires elevated privileges or network access.
+A catalog entry is not a security endorsement. Review permissions, network access, dependencies, credentials and upstream maintenance before installation. Never commit API keys, passwords or private tokens.
