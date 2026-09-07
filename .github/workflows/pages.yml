@@ -1,4 +1,4 @@
-name: Deploy Hub
+name: Deploy AI Agents Hub
 
 on:
   push:
@@ -23,17 +23,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Prepare site
         run: |
+          rm -rf _site
           mkdir -p _site
-          cp -R docs/index.html _site/index.html
-          cp -R agents skills docs templates CONTRIBUTING.md SECURITY.md CODE_OF_CONDUCT.md LICENSE README.md README.ar.md _site/ 2>/dev/null || true
+          cp -R docs/. _site/
+          cp -R agents _site/agents
+          cp -R skills _site/skills
+          cp -R templates _site/templates
+          cp README.md README.ar.md CONTRIBUTING.md SECURITY.md CODE_OF_CONDUCT.md LICENSE _site/ 2>/dev/null || true
+          touch _site/.nojekyll
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
